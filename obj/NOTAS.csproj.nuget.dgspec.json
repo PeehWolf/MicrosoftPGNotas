@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\NOTAS\\NOTAS.csproj": {}
+    "C:\\Users\\USER\\Desktop\\NOTAS\\MicrosoftPGNotas\\NOTAS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\NOTAS\\NOTAS.csproj": {
+    "C:\\Users\\USER\\Desktop\\NOTAS\\MicrosoftPGNotas\\NOTAS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\NOTAS\\NOTAS.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\NOTAS\\MicrosoftPGNotas\\NOTAS.csproj",
         "projectName": "NOTAS",
-        "projectPath": "C:\\Users\\USER\\Desktop\\NOTAS\\NOTAS.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\NOTAS\\MicrosoftPGNotas\\NOTAS.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\NOTAS\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\NOTAS\\MicrosoftPGNotas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
