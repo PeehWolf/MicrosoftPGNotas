@@ -7,15 +7,15 @@ namespace MicrosoftPGNotas.Controllers
     {
         private readonly AlunoModel _alunoModel;
 
-        public AlunoController()
+        public AlunoController(string nome, int idade, double nota)
         {
-            _alunoModel = new AlunoModel(); // Crie uma instância do Model necessário
+            _alunoModel = new AlunoModel(nome, idade, nota);
         }
 
         public IActionResult Index()
         {
             // Obtenha os alunos do Model
-            var alunos = _alunoModel.GetAlunos();
+            var alunos = AlunoModel.GetAlunos();
 
             // Retorne a View correspondente, passando a lista de alunos como modelo
             return View(alunos);

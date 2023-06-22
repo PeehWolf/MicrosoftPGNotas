@@ -1,21 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
 using MicrosoftPGNotas.Aluno.GPA;
-
 namespace MicrosoftPGNotas.Controllers
 {
-    public class ViewController : Controller
+    public class GPAController : Controller
     {
         private readonly CalculadoraDeMedias _calculadora;
 
-        public ViewController()
+        public GPAController()
         {
             _calculadora = new CalculadoraDeMedias();
         }
 
         public IActionResult MediaGeral()
         {
-            int[] creditos = { 3, 4, 3, 4 }; // Exemplo de créditos das disciplinas
-            int[] notas = { 8, 9, 7, 8 }; // Exemplo de notas das disciplinas
+            int[] creditos = {4, 3, 2, 3 };
+            decimal[] notasDecimais = { 8.5m, 9.0m, 7.5m, 8.0m }; // Exemplo de notas
+            
+            int[] notas = Array.ConvertAll(notasDecimais, x=> (int)x);
 
             decimal mediaGeral = _calculadora.CalcularGPA(creditos, notas);
 
